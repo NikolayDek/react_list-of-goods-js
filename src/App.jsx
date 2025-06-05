@@ -26,7 +26,7 @@ function getPrepearedGoods(goods, { sortField, isReverse }) {
     prepearedGoods = prepearedGoods.sort((good1, good2) => {
       switch (sortField) {
         case SORT_BY_ALPHABET:
-          return good1[0].localeCompare(good2[0]);
+          return good1.localeCompare(good2[0]);
 
         case SORT_BY_LENGTH:
           return good1.length - good2.length;
